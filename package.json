@@ -1,0 +1,49 @@
+{
+  "name": "sunodejs",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "pnpm clean && tsc --project tsconfig.build.json",
+    "clean": "rm -rf ./lib/",
+    "lint": "eslint ./src/ --fix",
+    "semantic-release": "semantic-release",
+    "test:watch": "jest --watch",
+    "test": "jest --coverage",
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "tsc --noEmit --watch",
+    "format": "prettier --write .",
+    "build:tsc-watch": "tsc --project tsconfig.build.json --watch",
+    "build:auto-index": "barrelsby -d src --delete",
+    "build:auto-index:watch:onchange": "onchange 'src/**/*.ts' -- npm run build:auto-index",
+    "build:auto-index:watch": "nodemon --ignore 'src/index.ts' --watch src --ext ts --exec \"npm run build:auto-index\"",
+    "build:watch": "npm-run-all -p build:tsc-watch build:auto-index",
+    "run-publish": "cross-env npm version patch -f && pnpm run build && npm publish",
+    "onchange nefunguje a nevím proč, zkusím tedy nodemon": "",
+    "test:onchange": "onchange './src/**/*.ts' -- echo 'Změna detekována!'"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "barrelsby": "^2.8.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "prettier": "^2.2.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jsdom": "^26.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
