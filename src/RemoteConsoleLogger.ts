@@ -5,7 +5,7 @@
  * CZ: Utilita pro zachytávání a přesměrování console logů na remote endpoint nebo do souboru
  *
  * Usage in your app:
- * import { setupRemoteConsole, setupFileLogger } from '@sunamo/sunode';
+ * import { setupRemoteConsole, setupFileLogger } from 'sunodejs';
  * setupFileLogger('./logs/console.txt');
  */
 
