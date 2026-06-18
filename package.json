@@ -1,5 +1,5 @@
 {
-  "name": "sunodejs",
+  "name": "@sunamo/sunodejs",
   "version": "1.0.0",
   "main": "./lib/index.js",
   "scripts": {
