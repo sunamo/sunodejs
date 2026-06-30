@@ -78,6 +78,7 @@ export function executeCommandInCmdInDirAsync(
 ): Promise<string | ExecException | null> {
   const options = {
     cwd: workingDir,
+    windowsHide: true,
   };
 
   /*
@@ -115,7 +116,7 @@ export async function executeCommandInCmdAsync({
   command,
 }: executeCommandInCmdAsyncProps): Promise<string> {
   const result = new Promise<string>((resolve, reject) => {
-    exec(command, (error, stdout, stderr) => {
+    exec(command, { windowsHide: true }, (error, stdout, stderr) => {
       if (error) {
         reject(error);
         return;
