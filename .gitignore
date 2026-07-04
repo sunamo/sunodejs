@@ -416,4 +416,5 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
+# Git worktree pracovni kopie (nikdy nesmi byt trackovane)
 *-claude*/
