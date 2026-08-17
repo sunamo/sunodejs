@@ -1,7 +1,6 @@
 export type AppFolders =
   | "Data"
   | "Logs"
-  | "Cache"
   | "Input"
   | "Output"
   | "Settings"
