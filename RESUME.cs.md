@@ -1,5 +1,5 @@
 ---
-schema_version: 4
+schema_version: 5
 type: library
 file_count: 46
 delete_recommendation_percent: 5
@@ -7,6 +7,9 @@ generated_date: 2026-09-30
 generated_time: 16:43:40
 github_origin: no
 github_source_url: 
+first_commit_date: 2026-06-08
+last_commit_date: 2026-09-24
+commit_count: 14
 ---
 
 ## Description
@@ -26,3 +29,11 @@ Doporučení ke smazání: **5 %** — malá vlastní sdílená knihovna, ale po
 - Používá se jako submodul v `english-line-by-line` a package.json má skript pro publikaci na npm.
 - Repo je malé (46 souborů včetně přeloženého `lib/`), poslední obsahová změna 2026-08-22.
 - Smazání by rozbilo submoduly, které na něj míří.
+
+## Historie commitů
+
+- První commit: 2026-06-08
+- Poslední commit: 2026-09-24
+- Celkem commitů: 14
+
+- Počítá se bez commitů, které jen generovaly RESUME.cs.md nebo README.md.
