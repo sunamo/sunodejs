@@ -23,6 +23,6 @@ Staženo z GitHubu: **ne** — vlastní knihovna, pouze publikovaná v účtu su
 
 Doporučení ke smazání: **5 %** — malá vlastní sdílená knihovna, ale používaná jako submodul v jiných appkách (např. english-line-by-line).
 
-- Používá se jako submodul v `english-line-by-line` a je publikovaná jako npm balíček.
+- Používá se jako submodul v `english-line-by-line` a package.json má skript pro publikaci na npm.
 - Repo je malé (46 souborů včetně přeloženého `lib/`), poslední obsahová změna 2026-08-22.
 - Smazání by rozbilo submoduly, které na něj míří.
