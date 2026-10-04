@@ -1,40 +1,36 @@
 ---
-schema_version: 10
-type: my-library
-file_count: 45
+schema_version: 7
+type: npmjs
+file_count: 46
 avg_lines_per_file: 117
-total_lines: 1683
-metrics_lm: 2026-10-04 16:02:36
 move_to_legacy_percent: 5
-description_updated: 2026-10-04
-links_updated: 2026-10-04
-github_source_url: not run
-origin_status: own
-origin_checked: not run
-article_source_url: not run
-article_status: own
-article_checked: not run
-last_build_ok: not run
-last_build_date: not run
-last_tests_run_date: not run
-covered_lines: not run
+generated_date: 2026-10-01
+generated_time: 16:40:42
+github_source_url: 
+last_build_ok: yes
+last_build_date: 2026-10-02
+last_tests_run_date: n/a
+covered_lines: 0
+total_lines: 1683
 ---
 
 ## Description
 
-Knihovna utilit pro Node.js, například práce se soubory a procesy, cesty k datům aplikací, vzdálené logování konzole a práce s URL. Vydává se jako npm balíček včetně typových deklarací.
+NPM knihovna `@sunamo/sunodejs` (TypeScript) s Node-only utilitami, které nelze bundlovat do webové části Electron aplikací: práce se soubory (FS, TF), spouštění příkazů (ProcessUtils), cesty appdat, vzdálený a souborový logger konzole a URL pomocníci. Slouží jako samostatný balíček oddělující Node část od webové (renderer) části aplikací. Vzniklo přejmenováním z `sunode`.
 
 ## Původ zdrojáků
 
-Staženo z GitHubu: **ne** — vlastní kód.
+Staženo z GitHubu: **ne** — vlastní knihovna, pouze publikovaná v účtu sunamo.
 
-- Ověřeno: Remote origin patří účtu sunamo / sunamocz.
+- Ověřeno: origin je github.com/sunamo/sunodejs, 17 commitů (smutekutek, Radek Jančík) od 2026-06-08 (`initial: sunodejs (renamed from sunode)`), přečten `readme.txt` (vlastní zadání v češtině), package.json a exporty v `src/` (vlastní funkce s odkazem na vlastní appdata a CjPositions); gh search neprováděn, kód je vlastní a specifický.
 
 ## Doporučení přesunu do legacy
 
-Doporučení přesunu do sunamocz-legacy.visualstudio.com: **5 %** — Aktivní sdílený npm balíček.
+Doporučení přesunu do sunamocz-legacy.visualstudio.com: **5 %** — malá vlastní sdílená knihovna, ale používaná jako submodul v jiných appkách (např. english-line-by-line).
 
-- Používá se jako submodul ve více appkách.
+- Používá se jako submodul v `english-line-by-line` a package.json má skript pro publikaci na npm.
+- Repo je malé (46 souborů včetně přeloženého `lib/`), poslední obsahová změna 2026-08-22.
+- Smazání by rozbilo submoduly, které na něj míří.
 
 ## Vazby na moje repa
 

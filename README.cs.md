@@ -6,4 +6,4 @@ schema_version: 1
 
 ## Short description
 
-Knihovna utilit pro Node.js, například práce se soubory a procesy, cesty k datům aplikací, vzdálené logování konzole a práce s URL. Vydává se jako npm balíček včetně typových deklarací.
+NPM knihovna `@sunamo/sunodejs` (TypeScript) s Node-only utilitami, které nelze bundlovat do webové části Electron aplikací: práce se soubory (FS, TF), spouštění příkazů (ProcessUtils), cesty appdat, vzdálený a souborový logger konzole a URL pomocníci. Slouží jako samostatný balíček oddělující Node část od webové (renderer) části aplikací. Vzniklo přejmenováním z `sunode`.
